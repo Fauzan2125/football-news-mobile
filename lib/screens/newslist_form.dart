@@ -101,7 +101,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                   ),
-                  value: _category,
+                  initialValue: _category,
                   items: _categories
                       .map((cat) => DropdownMenuItem(
                             value: cat,
@@ -156,7 +156,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Colors.indigo),
+                          WidgetStateProperty.all(Colors.indigo),
                     ),
                     onPressed: () {
                       
